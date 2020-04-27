@@ -49,12 +49,33 @@ body {
 }
 
 .hlavni-recept {
-    background-image: url(images/burger.jpg);
     min-height: 200px;
+    border-bottom: solid white 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hlavni-recept::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(images/burger.jpg);
     background-size: cover;
     background-position: center;
-    border-bottom: solid white 0.5px;
     filter: brightness(80%);
+}
+
+.hlavni-recept .recept-meta {
+    position: relative;
+}
+
+.hlavni-recept .recept-nazev {
+    position: relative;
 }
 
 .recept {
@@ -62,23 +83,22 @@ body {
     background-size: cover;
     background-position: center;
     border-bottom: solid white 0.5px;
-    filter: brightness(80%);
 }
 
 .recept2 {
-    background-image: url(images/sushi.jpg);
+    background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url(images/sushi.jpg);
 }
 
 .recept3 {
-    background-image: url(images/rajcata.jpg);
+    background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url(images/kure.jpg);
 }
 
 .recept4 {
-    background-image: url(images/kure.jpg);
+    background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url(images/rajcata.jpg);
 }
 
 .recept5 {
-    background-image: url(images/grilovani.jpg);
+    background-image: linear-gradient(rgba(49, 46, 46, 0.5), rgba(49, 46, 46, 0.5)), url(images/grilovani.jpg);
 }
 
 .recept-nazev {
@@ -101,7 +121,6 @@ body {
     font-size: 28px;
     font-weight: 800;
     padding: 10px;
-    margin-top: 100px;
 }
 
 .recept .recept-nazev {
@@ -113,4 +132,33 @@ body {
 .recept-meta {
     display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 480px) {
+    .doporucujeme {
+        width: 550px;
+    }
+    .hlavni-recept {
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .recept {
+        min-height: 150px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .recepty {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .recept2 {
+        border-right: solid white 0.5px;
+    }
+    .recept4 {
+        border-right: solid white 0.5px;
+    }
 }
