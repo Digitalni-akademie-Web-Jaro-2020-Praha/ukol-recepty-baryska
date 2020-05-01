@@ -4,9 +4,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-:after,
-:before {
+*, :after, :before {
   box-sizing: inherit;
 }
 
@@ -44,6 +42,8 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 
 /* ------------------------------- */
+
+/* Pro ztmavení obrázků jsem použila dvě metody - pseudoelement ::before (u velkého obrázku) a linear-gradient (u ostatních). Ten druhý je o dost jednodušší, ale výsledek prvního se mi líbí víc - je nějaká možnost, jak dosáhnout ztmavení jako u pseudoelementu a zároveň nevyplácat tolik kódu? :) */
 
 .doporucujeme {
   width: 350px;
@@ -89,39 +89,19 @@ body {
 }
 
 .recept2 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(images/sushi.jpg);
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/sushi.jpg);
 }
 
 .recept3 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(images/kure.jpg);
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/kure.jpg);
 }
 
 .recept4 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(images/rajcata.jpg);
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/rajcata.jpg);
 }
 
 .recept5 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(images/grilovani.jpg);
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/grilovani.jpg);
 }
 
 .recept-nazev {
@@ -133,8 +113,7 @@ body {
   color: white;
 }
 
-.recept-kategorie,
-.recept-komentare {
+.recept-kategorie, .recept-komentare {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -185,13 +164,11 @@ body {
   .recept4 {
     border-right: solid white 0.5px;
   }
-
   .hlavni-recept .recept-nazev {
     font-size: 36px;
     font-weight: 800;
     padding: 20px;
   }
-
   .recept .recept-nazev {
     font-size: 22px;
     font-weight: 800;
@@ -205,12 +182,10 @@ body {
     display: flex;
     align-items: center;
   }
-
   .hlavni-recept {
     min-height: 400px;
     flex-basis: 33%;
   }
-
   .recepty {
     flex-basis: 66%;
     border-left: solid white 0.5px;
