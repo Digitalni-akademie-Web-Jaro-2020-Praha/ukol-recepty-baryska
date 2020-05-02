@@ -4,7 +4,9 @@ html {
   box-sizing: border-box;
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: inherit;
 }
 
@@ -89,19 +91,39 @@ body {
 }
 
 .recept2 {
-  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/sushi.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/sushi.jpg);
 }
 
 .recept3 {
-  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/kure.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/kure.jpg);
 }
 
 .recept4 {
-  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/rajcata.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/rajcata.jpg);
 }
 
 .recept5 {
-  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/grilovani.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/grilovani.jpg);
 }
 
 .recept-nazev {
@@ -113,7 +135,8 @@ body {
   color: white;
 }
 
-.recept-kategorie, .recept-komentare {
+.recept-kategorie,
+.recept-komentare {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -180,7 +203,7 @@ body {
   .doporucujeme {
     width: 1000px;
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
   .hlavni-recept {
     min-height: 400px;
